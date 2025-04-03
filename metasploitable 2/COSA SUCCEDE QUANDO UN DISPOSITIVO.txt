@@ -1,0 +1,9 @@
+COSA SUCCEDE QUANDO UN DISPOSITIVO INVIA UN PACCHETTO A UN DISPOSITIVO SU UN ALTRA RETE ?
+
+quando un  dispositivo (es.un PC o laptop) deve inviare un pachetto di dati a un altro dispositivo che si trova in una rete differente , si accorge che l' indirizzo IP della destinazione non appartiene alla sua rete locale che è verificata dalla subnet mask. a quel punto, invia un pacchetto alla default getaway, che solitamente è un router. Il router riceve il pacchetto e grazie alla sua tabella di routing capisce dove inoltrarlo. Il router quindi invia il pacchetto sull' interfaccia corretta ovvero quella che collega la rete di destinazione.
+il pacchetto arriva allo switch della seconda rete che usa gli indirizzi MAC per consegnarlo al giusto dispositivo 
+
+riassunto:
+
+il livello 3 (rete) si occupa di trovare la destinazione tramite l' IP.
+il livello 2 (collegamento dati) ha il compito di spostare fisicamente il pacchetto nel collegamento finale usando l' indirizzo MAC.
